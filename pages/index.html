@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+  <title>Etiquetei</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <button id="toggle-dark-mode"><span id="theme-source">Light</span> mode</button>
+  <button id="reset-to-system">reset</button>
+  <h1>Hello World!!!</h1>
+
+  <input type="text" name="desc-product" class="desc-product">
+  <button id="search-product">Buscar</button>
+  <div class="result-produtos"></div>
+
+  <div id="info"></div>
+  <script src="./renderer.js"></script>
+  <!-- <script src="./infra/database.js"></script> -->
+</body>
+
+
+</html>
